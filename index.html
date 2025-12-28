@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="desktop">
+ <div class="taskbar">
+  <!-- LEFT : WEATHER -->
+  <div class="taskbar-left" data-label="Mostly sunny">
+    <i class="fa-solid fa-cloud-sun" aria-hidden="true"></i>
+    <span>27°C</span>
+  </div>
+
+  <!-- CENTER : MAIN ICONS -->
+  <div class="taskbar-center">
+    <span class="icon-btn" data-label="Start">
+      <img src="/assets/icons/window11.png" alt="Windows 11">
+    </span>
+    <div class="search-wrapper" role="search" data-label="Search">
+      <img src="/assets/icons/search.png" alt="Search" class="search-icon" aria-hidden="true">
+      <input type="text" class="taskbar-search" placeholder="Type here to search">
+    </div>
+    <span class="icon-btn" data-label="Edge"><img src="/assets/icons/edge.png" alt="Edge"></span>
+    <span class="icon-btn" data-label="Teams"><img src="/assets/icons/teams.png" alt="Teams"></span>
+    <span class="icon-btn" data-label="Brave"><img src="/assets/icons/Bravepng.png" alt="Brave"></span>
+    <span class="icon-btn" data-label="YouTube"><img src="/assets/icons/yt.png" alt="YouTube"></span>
+  </div>
+
+  <!-- RIGHT : SYSTEM TRAY -->
+  <div class="taskbar-right">
+    <i class="fa-solid fa-cloud" data-label="OneDrive" aria-hidden="true"></i>
+    <span data-label="Language">ENG</span>
+    <i class="fa-solid fa-wifi" data-label="Wi‑Fi" aria-hidden="true"></i>
+    <i class="fa-solid fa-volume-high" data-label="Sound" aria-hidden="true"></i>
+    <i class="fa-solid fa-battery-full" data-label="Battery" aria-hidden="true"></i>
+    <div class="time-box" id="taskbarTimeBox" data-label="17:11 — 28-12-2025">
+      <span>17:11</span>
+      <span>28-12-2025</span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <div class="main">
+    <h1 class="time">08:30 AM</h1>
+    <p><span class="week">Saturday</span>, <span class="date">27-12-2025</span></p>
+    <div class="lock-screen-icons">
+      <i class="fa-solid fa-wifi"></i>
+      <i class="fa-solid fa-battery-full"></i>
+    </div>
+  </div>
+
+
+
+
+  <!-- Context menu: appears on right-click anywhere on the desktop -->
+  <div class="context-menu" id="desktopContextMenu" aria-hidden="true">
+    <div class="context-menu__item"><i class="fa-solid fa-border-all"></i><span>View</span><i class="fa-solid fa-chevron-right" style="margin-left:auto"></i></div>
+    <div class="context-menu__item"><i class="fa-solid fa-arrow-up-wide-short"></i><span>Sort by</span><i class="fa-solid fa-chevron-right" style="margin-left:auto"></i></div>
+    <div class="context-menu__item"><i class="fa-solid fa-rotate"></i><span>Refresh</span></div>
+    <div class="context-menu__divider"></div>
+    <div class="context-menu__item"><i class="fa-solid fa-rotate-left"></i><span>Undo Move</span><span style="margin-left:auto;opacity:0.8">Ctrl+Z</span></div>
+    <div class="context-menu__item"><i class="fa-solid fa-plus"></i><span>New</span><i class="fa-solid fa-chevron-right" style="margin-left:auto"></i></div>
+    <div class="context-menu__divider"></div>
+    <div class="context-menu__item"><i class="fa-solid fa-desktop"></i><span>Display settings</span></div>
+    <div class="context-menu__item"><i class="fa-solid fa-paintbrush"></i><span>Personalize</span></div>
+    <div class="context-menu__divider"></div>
+    <div class="context-menu__item"><i class="fa-solid fa-terminal"></i><span>Open in Terminal</span></div>
+    <div class="context-menu__item"><i class="fa-solid fa-ellipsis-h"></i><span>Show more options</span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
